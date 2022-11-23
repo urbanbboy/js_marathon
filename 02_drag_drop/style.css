@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", san-serif;
+    background: rgb(202,210,197);
+    background: linear-gradient(90deg, rgba(202,210,197,1) 0%, rgba(132,169,140,1) 33%, rgba(83,121,111,1) 66%, rgba(53,79,82,1) 100%);
+    display: flex;
+    padding-top: 5rem;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.nav {
+    text-align: center;
+}
+
+.col-header {
+    width: 150px;
+    -webkit-box-shadow: 1px 0px 15px 9px rgba(0,0,0,0.17); 
+    box-shadow: 1px 0px 15px 9px rgba(0,0,0,0.17);
+    border-radius: 20px;
+    padding: 0.8rem 1rem;
+    color: #fff;
+}
+
+.item {
+    width: 150px;
+    height: 66px;
+    border: none;
+    box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+    border-radius: 20px;
+    background: #97b2c6;
+    padding: 0.8rem 1rem;
+    color: #292b2a;
+    text-align: center;
+    cursor: grab;
+    transition: all .3s ease-out;
+}
+
+.item.active {
+    cursor: grabbing;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in;
+    -webkit-box-shadow: 2px 5px 16px 0px #0B325E, 1px 0px 15px 10px rgba(0,0,0,0); 
+    box-shadow: 2px 5px 16px 0px #0B325E, 1px 0px 15px 10px rgba(0,0,0,0);
+}
+
+.placeholder {
+    width: 150px;
+    height: 66px;
+}
+
+.start {
+    background: rgb(125,123,118);
+    background: linear-gradient(90deg, rgba(125,123,118,1) 0%, rgba(150,88,88,1) 100%);
+}
+
+.progress {
+    background: rgb(150,88,88);
+    background: linear-gradient(90deg, rgba(150,88,88,1) 0%, rgba(150,88,88,1) 51%, rgba(150,88,88,1) 100%);
+}
+
+.done {
+    background: rgb(150,88,88);
+    background: linear-gradient(90deg, rgba(150,88,88,1) 0%, rgba(125,125,125,1) 100%);
+}
+
+.hold {
+    border: 5px solid #eee;
+}
+
+.hide {
+    display: none;
+}
+
+.hovered {
+    border-top: 2px solid #a0b6c7;
+}
